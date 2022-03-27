@@ -1,0 +1,1 @@
+export const serverAddress = 'https://salty-reaches-42950.herokuapp.com'
