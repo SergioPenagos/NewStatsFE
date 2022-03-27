@@ -25,6 +25,11 @@ const centerStyle = {
   height: "..",
 };
 
+const allStyle = {
+  width: "1090px",
+  margin: "auto"
+}
+
 
 const HtmlTooltip = styled(({ className, ...props }) => (
   <Tooltip {...props} classes={{ popper: className }} />
