@@ -78,7 +78,7 @@ function MainPage() {
   }
 
   return (
-    <div className="all">
+    <div className="all" style={allStyle}>
       <Title id="title" />
       <Description />
       <div className="container">
