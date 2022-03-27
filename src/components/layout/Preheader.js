@@ -26,12 +26,12 @@ function Preheader() {
           </Col>
           <Col lg={4}>
             <ul style={ul_style}>
-              <li>
+              <li style={{display:"inline-block"}}>
                 <a href="https://github.com/SergioPenagos/NewStatsFE" target={"_blank"}>
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
               </li>
-              <li>
+              <li style={{display:"inline-block"}}>
                 <a href="https://www.linkedin.com/in/sergio-penagos-057327181/" target={"_blank"}>
                   <FontAwesomeIcon icon={faLinkedin} />
                 </a>
