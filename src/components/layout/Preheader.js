@@ -27,12 +27,12 @@ function Preheader() {
           <Col lg={4}>
             <ul style={ul_style}>
               <li style={{display:"inline-block"}}>
-                <a href="https://github.com/SergioPenagos/NewStatsFE" target={"_blank"}>
+                <a href="https://github.com/SergioPenagos/NewStatsFE" target={"_blank"}  rel="noreferrer">
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
               </li>
               <li style={{display:"inline-block"}}>
-                <a href="https://www.linkedin.com/in/sergio-penagos-057327181/" target={"_blank"}>
+                <a href="https://www.linkedin.com/in/sergio-penagos-057327181/" target={"_blank"}  rel="noreferrer">
                   <FontAwesomeIcon icon={faLinkedin} />
                 </a>
               </li>

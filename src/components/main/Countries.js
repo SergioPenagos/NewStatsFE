@@ -17,6 +17,8 @@ function CountriesColors(props) {
         return [<Nicaragua country={countryId}/>, "Nicaragua"];
       case 'Panama':
         return  [<Panama country={countryId}/>, "Panamá"];
+      default:
+        return [<Guatemala country={countryId}/>, "Guatemala"];
     }}
     
     let [flag, countryName] = countryFlag(countryId);

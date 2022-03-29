@@ -1,14 +1,3 @@
-import Row from "react-bootstrap/Row";
-
-const centerStyle = {
-  display: "flex",
-  justifyContent: "center",
-  verticalAlign: "baseline",
-  alignItems: "center",
-  width: "..",
-  height: "..",
-};
-
 function Title() {
   return (
     <div className="row mt-5">

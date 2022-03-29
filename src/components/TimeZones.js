@@ -1,7 +1,7 @@
 import NewsPageRotate from "./main/NewsPage_d3";
 import Clock from "../components/main/Clock";
 import _ from "lodash";
-import React, { useState, useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import * as d3 from "d3";
 
 const centerStyle = {
@@ -30,7 +30,7 @@ function TimeZones(props) {
   
     useEffect(() => {
       console.log('width', divref.current ? divref.current.offsetWidth : 0);
-    }, [divref.current]);
+    }, []);
 
   times.forEach(function callback(time, index) {
     var innerComps = [];
@@ -54,7 +54,7 @@ function TimeZones(props) {
           React.createElement(
             "div",
             { key:site.site_name, className:"col md=2 xl=2 d-flex justify-content-center" , ref: divref},
-            <a href={"http://www."+ site.site_url} target={"_blank"}>
+            <a href={"http://www."+ site.site_url} target={"_blank"}  rel="noreferrer">
             <NewsPageRotate
               pageNum={_.range(Math.round(site.page_views))}
               description={site.site_name}

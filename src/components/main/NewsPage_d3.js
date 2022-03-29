@@ -1,12 +1,4 @@
 import React from "react";
-import {
-  Guatemala,
-  CostaRica,
-  Salvador,
-  Honduras,
-  Nicaragua,
-  Panama,
-} from "./Flags/Flags";
 
 const pagePath =
   "M 10 10 C 50,30 90,-5 100,10 C 110,-5 149,30 180,10 L 195,110 C 200,125 120,70 100,110 C 90,70 50,125 5,110 L 10,10 M 100, 10 V 110";
@@ -19,76 +11,74 @@ function NewsPageRotate(props) {
   const changeScale = props.changeScale;
   const scale = props.scale;
   const countryId = props.country;
-
-  function countryFlag(countryId) {
-    switch (countryId) {
-      case "Guatemala":
-        return [<Guatemala country={countryId} />, "Guatemala"];
-      case "CostaRica":
-        return [<CostaRica country={countryId} />, "Costa Rica"];
-      case "ElSalvador":
-        return [<Salvador country={countryId} />, "El Salvador"];
-      case "Honduras":
-        return [<Honduras country={countryId} />, "Honduras"];
-      case "Nicaragua":
-        return [<Nicaragua country={countryId} />, "Nicaragua"];
-      case "Panama":
-        return [<Panama country={countryId} />, "Panamá"];
-    }
-  }
   
+  var initialX;
+  var initialY;
+  var finalScale;
+
   if (!changeScale && pageNum.length !== 1) {
-    var initialX = 10;
-    var initialY = 200;
-    var finalScale = 0.20;
+    initialX = 10;
+    initialY = 200;
+    finalScale = 0.20;
   } else if (!changeScale && pageNum.length === 1) {
-    var initialX = 200;
-    var initialY = 300;
-    var finalScale = 0.20;
+    initialX = 200;
+    initialY = 300;
+    finalScale = 0.20;
   } else if (changeScale && pageNum.length !== 1) {
     switch (scale) {
       case 0.4:
-        var initialX = 550;
-        var initialY = 900;
-        var finalScale = 0.20 * scale;
+        initialX = 550;
+        initialY = 900;
+        finalScale = 0.20 * scale;
         break;
       case 0.6:
-        var initialX = 300;
-        var initialY = 600;
-        var finalScale = 0.20 * scale;
+        initialX = 300;
+        initialY = 600;
+        finalScale = 0.20 * scale;
         break;
       case 0.8:
-        var initialX = 150;
-        var initialY = 400;
-        var finalScale = 0.20 * scale;
+        initialX = 150;
+        initialY = 400;
+        finalScale = 0.20 * scale;
         break;
       case 1:
-        var initialX = 40;
-        var initialY = 300;
-        var finalScale = 0.20 * scale;
+        initialX = 40;
+        initialY = 300;
+        finalScale = 0.20 * scale;
         break;
+      default:
+        initialX = 40;
+        initialY = 300;
+        finalScale = 0.20 * scale;
+        break;
+
     }
   } else if (changeScale && pageNum.length === 1) {
     switch (scale) {
       case 0.4:
-        var initialX = 680;
-        var initialY = 900;
-        var finalScale = 0.20 * scale;
+        initialX = 680;
+        initialY = 900;
+        finalScale = 0.20 * scale;
         break;
       case 0.6:
-        var initialX = 420;
-        var initialY = 400;
-        var finalScale = 0.20 * scale;
+        initialX = 420;
+        initialY = 400;
+        finalScale = 0.20 * scale;
         break;
       case 0.8:
-        var initialX = 290;
-        var initialY = 300;
-        var finalScale = 0.20 * scale;
+        initialX = 290;
+        initialY = 300;
+        finalScale = 0.20 * scale;
         break;
       case 1:
-        var initialX = 220;
-        var initialY = 250;
-        var finalScale = 0.20 * scale;
+        initialX = 220;
+        initialY = 250;
+        finalScale = 0.20 * scale;
+        break;
+      default:
+        initialX = 220;
+        initialY = 250;
+        finalScale = 0.20 * scale;
         break;
     }
   }
