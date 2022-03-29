@@ -54,7 +54,7 @@ function TimeZones(props) {
           React.createElement(
             "div",
             { key:site.site_name, className:"col md=2 xl=2 d-flex justify-content-center" , ref: divref},
-            <a href={"http://www."+ site.site_url} target={"_blank"}  rel="noreferrer">
+            <a href={"http://www."+ site.site_url} target={"_blank"}  rel="noreferrer" style={{display:"flex", justifyContent: "center"}}>
             <NewsPageRotate
               pageNum={_.range(Math.round(site.page_views))}
               description={site.site_name}

@@ -6,7 +6,7 @@ function Layout(props) {
     <>
       <Preheader />
       <div>
-        <Container>
+        <Container style={{display:"flex", justifyContent:"center"}}>
             <main>{props.children}</main>
         </Container>
       </div>
