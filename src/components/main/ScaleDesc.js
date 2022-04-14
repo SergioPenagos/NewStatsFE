@@ -28,7 +28,7 @@ function ScaleDesc(props) {
       <HtmlTooltip
         title={
           <React.Fragment>
-            <Typography color="inherit">Visitas per capita</Typography>
+            <Typography color="inherit">Visits per capita</Typography>
             {"Ratio of the amount of vists compared with the publications country population."}
           </React.Fragment>
         }

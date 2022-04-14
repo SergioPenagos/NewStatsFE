@@ -26,7 +26,7 @@ function Scale(props) {
      <HtmlTooltip
         title={
           <React.Fragment>
-            <Typography color="inherit">Artículos por visitante</Typography>
+            <Typography color="inherit">Articles per visit</Typography>
             {"Amount of articles read by an average reader"}
           </React.Fragment>
         }
