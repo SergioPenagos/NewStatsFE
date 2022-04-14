@@ -67,7 +67,7 @@ function MainPage() {
       <div className="row mt-5" style={centerStyle}>
       <div className="col md=5 xl=5 "> </div>
         <div className="col md=2 xl=2 d-flex justify-content-center" >
-          <Clock minutes={180 + 30} hours={-90} desc={true} descriptionone={"Segundos promedio"} descriptiontwo={"por visita"} />
+          <Clock minutes={180 + 30} hours={-90} desc={true} descriptionone={"Average time per visit"} descriptiontwo={"in seconds"} />
         
         </div>
         <div className="col md=5 xl=5 "></div>
