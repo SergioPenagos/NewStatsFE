@@ -29,7 +29,7 @@ function ScaleDesc(props) {
         title={
           <React.Fragment>
             <Typography color="inherit">Visitas per capita</Typography>
-            {"Cantidad de visitas en relación con la población del país de procedencia del sitio."}
+            {"Ratio of the amount of vists compared with the publications country population."}
           </React.Fragment>
         }
       >
@@ -40,7 +40,7 @@ function ScaleDesc(props) {
             <NewsPageRotate
               pageNum={_.range(1)}
               description={round(PPerCapita[0], 3)}
-              secondline={"visitas per capita"}
+              secondline={"visits per capita"}
               changeScale={true}
               scale={0.4}
               desc={true}
@@ -51,7 +51,7 @@ function ScaleDesc(props) {
             <NewsPageRotate
               pageNum={_.range(1)}
               description={round(PPerCapita[1], 2)}
-              secondline={"visitas per capita"}
+              secondline={"visits per capita"}
               changeScale={true}
               scale={1.0}
               desc={true}

@@ -13,7 +13,7 @@ function Description() {
   return (
     <Row style={centerStyle}>
       <h6>
-        una visualización del consumo de noticias en línea en centro América.
+        data visualization about how digital news are being consumed in Central America.
       </h6>
     </Row>
   );

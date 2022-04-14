@@ -20,7 +20,7 @@ function CountriesDesc1() {
     <HtmlTooltip
       title={
         <React.Fragment>
-          {"Representación de los países incluidos."}
+          {"Representation of the included countries."}
         </React.Fragment>
       }
     >

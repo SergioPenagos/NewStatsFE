@@ -27,7 +27,7 @@ function Scale(props) {
         title={
           <React.Fragment>
             <Typography color="inherit">Artículos por visitante</Typography>
-            {"Cantidad de artículos leídos por un visitante promedio"}
+            {"Amount of articles read by an average reader"}
           </React.Fragment>
         }
       >
@@ -37,7 +37,7 @@ function Scale(props) {
       <div className="col md=2 xl=2 d-flex justify-content-center">
         <NewsPageRotate
           pageNum={_.range(Math.round(minPViews))}
-          secondline={Math.round(minPViews) + " artículos visitados"}
+          secondline={Math.round(minPViews) + " articles read"}
           changeScale={false}
           scale={1}
           desc={true}
@@ -47,7 +47,7 @@ function Scale(props) {
       <div className="col md=2 xl=2 d-flex justify-content-center">
         <NewsPageRotate
           pageNum={_.range(Math.round(maxPViews))}
-          secondline={Math.round(maxPViews) + " artículos visitados"}
+          secondline={Math.round(maxPViews) + " articles read"}
           changeScale={false}
           scale={1}
           desc={true}

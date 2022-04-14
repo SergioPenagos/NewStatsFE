@@ -41,6 +41,7 @@ function MainPage() {
         return response.json();
       })
       .then(function (myJson) {
+        console.log(myJson.data)
         setSiteData(myJson);
         setMaxPViews(myJson.max_pagev);
         setMinPViews(myJson.min_pagev);
